@@ -18,6 +18,9 @@ builder.Services.AddSingleton<IFlagsmithClient, FlagsmithClient>(provider =>
     return new FlagsmithClient(settings);
 });
 
+
+builder.Services.AddScoped((Action<bool>) (async s =>  (await (await s.GetRequiredService<FlagsmithClient>().GetEnvironmentFlags()).IsFeatureEnabled("secret_button")) ? new NewMessageWriter() : new OldMessageWriter()));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
