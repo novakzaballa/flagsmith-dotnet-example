@@ -18,8 +18,7 @@ builder.Services.AddSingleton<IFlagsmithClient, FlagsmithClient>(provider =>
     return new FlagsmithClient(settings);
 });
 
-
-builder.Services.AddScoped((Action<bool>) (async s =>  (await (await s.GetRequiredService<FlagsmithClient>().GetEnvironmentFlags()).IsFeatureEnabled("secret_button")) ? new NewMessageWriter() : new OldMessageWriter()));
+builder.Services.AddScoped<IMessageFactory>(serviceProvider => new MyMessageFactory(serviceProvider));
 
 var app = builder.Build();
 

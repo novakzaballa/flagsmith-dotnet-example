@@ -1,4 +1,5 @@
-﻿using Flagsmith;
+﻿using Example.Models;
+using Flagsmith;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 
@@ -7,12 +8,14 @@ namespace Example.Controllers
     public class HomeController : Controller
     {
         private readonly IFlagsmithClient _flagsmithClient;
-        public static string FeatureName = "secret_button";
+        private readonly Task<IMessageWriter> _getMessageWriter;
+        public readonly static string FeatureName = "secret_button";
 
 
-        public HomeController(IFlagsmithClient flagsmithClient)
+        public HomeController(IFlagsmithClient flagsmithClient, IMessageFactory messageFactory)
         {
             _flagsmithClient = flagsmithClient;
+            _getMessageWriter = messageFactory.GetMessageWriter();
         }
 
         [HttpPost]
@@ -41,6 +44,8 @@ namespace Example.Controllers
                 buttonColour = JObject.Parse(buttonData)["colour"].Value<string>(),
                 identifier = Identifier,
             };
+
+            _getMessageWriter.Result.Write("Novak");
 
             return View();
         }
