@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "6jWbOgwgUBtVWsBCWQkB3CJSW/bR6SDspP5SAuDiY7s=",
+  "Source": "Example",
+  "BasePath": "_content/Example",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Example/wwwroot",
+      "Source": "Example",
+      "ContentRoot": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/wwwroot/",
+      "BasePath": "_content/Example",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/obj/Debug/net6.0/scopedcss/bundle/Example.styles.css",
+      "SourceId": "Example",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/obj/Debug/net6.0/scopedcss/bundle/",
+      "BasePath": "_content/Example",
+      "RelativePath": "Example.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/obj/Debug/net6.0/scopedcss/bundle/Example.styles.css"
+    },
+    {
+      "Identity": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/obj/Debug/net6.0/scopedcss/projectbundle/Example.bundle.scp.css",
+      "SourceId": "Example",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/obj/Debug/net6.0/scopedcss/projectbundle/",
+      "BasePath": "_content/Example",
+      "RelativePath": "Example.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/obj/Debug/net6.0/scopedcss/projectbundle/Example.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/wwwroot/favicon.ico",
+      "SourceId": "Example",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/novak/Documents/flagsmith/flagsmith-dotnet-client/Example/wwwroot/",
+      "BasePath": "_content/Example",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.ico"
+    }
+  ]
+}
